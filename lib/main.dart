@@ -14,8 +14,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: home(),
       debugShowCheckedModeBanner: false,
+      home: home(),
     );
   }
 }
@@ -71,8 +71,8 @@ class _homestate extends State<home> {
         actions: [
           Image.asset(
             "img/qr.png",
-            height: 35,
-            width: 35,
+            height: 27,
+            width: 27,
             color: Colors.white,
           ),
           const SizedBox(
@@ -80,14 +80,14 @@ class _homestate extends State<home> {
           ),
           const Icon(
             Icons.notification_add,
-            size: 30,
+            size: 27,
           ),
           const SizedBox(
             width: 20,
           ),
           const Icon(
             Icons.help_outline_rounded,
-            size: 30,
+            size: 27,
           ),
           const SizedBox(
             width: 20,
@@ -367,89 +367,92 @@ class _homestate extends State<home> {
 // end of recive money
 
 // phone pay wallet start
-              Container(
-                margin: const EdgeInsets.only(left: 1, top: 2),
-                padding: const EdgeInsets.all(6),
-                decoration: const BoxDecoration(
-                  // color: Color.fromARGB(255, 86, 45, 150),
-                  borderRadius: BorderRadius.all(Radius.circular(15)),
-                ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [
-                    Container(
-                      height: 80,
-                      width: 120,
-                      decoration: BoxDecoration(
-                          color: Color.fromARGB(255, 55, 90, 245),
-                          borderRadius: BorderRadius.circular(15)),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Image.asset(
-                            "img/wallet.png",
-                            height: 30,
-                            width: 30,
-                            color: Colors.white,
-                          ),
-                          const Text(
-                            "PhonePe Wallet",
-                            style: TextStyle(
+              SingleChildScrollView(
+                //scrollDirection: Axis.horizontal,
+                child: Container(
+                  margin: const EdgeInsets.only(left: 1, top: 2),
+                  padding: const EdgeInsets.all(6),
+                  decoration: const BoxDecoration(
+                    // color: Color.fromARGB(255, 86, 45, 150),
+                    borderRadius: BorderRadius.all(Radius.circular(15)),
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Container(
+                        height: 80,
+                        width: 110,
+                        decoration: BoxDecoration(
+                            color: Color.fromARGB(255, 55, 90, 245),
+                            borderRadius: BorderRadius.circular(15)),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Image.asset(
+                              "img/wallet.png",
+                              height: 30,
+                              width: 30,
                               color: Colors.white,
                             ),
-                          )
-                        ],
+                            const Text(
+                              "PhonePe Wallet",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                            )
+                          ],
+                        ),
                       ),
-                    ),
-                    Container(
-                      height: 80,
-                      width: 120,
-                      decoration: BoxDecoration(
-                          color: Color.fromARGB(255, 55, 90, 245),
-                          borderRadius: BorderRadius.circular(15)),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Image.asset(
-                            "img/reward.png",
-                            height: 30,
-                            width: 30,
-                            color: Colors.white,
-                          ),
-                          const Text(
-                            "Rewards",
-                            style: TextStyle(
+                      Container(
+                        height: 80,
+                        width: 110,
+                        decoration: BoxDecoration(
+                            color: Color.fromARGB(255, 55, 90, 245),
+                            borderRadius: BorderRadius.circular(15)),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Image.asset(
+                              "img/reward.png",
+                              height: 30,
+                              width: 30,
                               color: Colors.white,
                             ),
-                          ),
-                        ],
+                            const Text(
+                              "Rewards",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
-                    ),
-                    Container(
-                      height: 80,
-                      width: 120,
-                      decoration: BoxDecoration(
-                          color: Color.fromARGB(255, 55, 90, 245),
-                          borderRadius: BorderRadius.circular(15)),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Image.asset(
-                            "img/anouncement.png",
-                            height: 30,
-                            width: 30,
-                            color: Colors.white,
-                          ),
-                          const Text(
-                            "Refer & Get ₹50",
-                            style: TextStyle(
+                      Container(
+                        height: 80,
+                        width: 110,
+                        decoration: BoxDecoration(
+                            color: Color.fromARGB(255, 55, 90, 245),
+                            borderRadius: BorderRadius.circular(15)),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Image.asset(
+                              "img/anouncement.png",
+                              height: 30,
+                              width: 30,
                               color: Colors.white,
                             ),
-                          ),
-                        ],
+                            const Text(
+                              "Refer & Get ₹50",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
 
@@ -790,21 +793,20 @@ class _homestate extends State<home> {
                               width: 50,
                               padding: const EdgeInsets.all(7),
                               decoration: const BoxDecoration(
-                                  color: Color.fromARGB(255, 137, 102, 236),
+                                  // color: Color.fromARGB(255, 137, 102, 236),
                                   borderRadius:
                                       BorderRadius.all(Radius.circular(15))),
                               child: Image.asset(
-                                "img/user.png",
+                                "img/rummy.png",
                                 height: 30,
                                 width: 30,
-                                color: Colors.white,
                               ),
                             ),
                             const Text(
-                              "To Mobail",
+                              "Rummy",
                               style: TextStyle(color: Colors.white),
                             ),
-                            const Text("Number",
+                            const Text("circle",
                                 style: TextStyle(color: Colors.white)),
                           ],
                         ),
@@ -816,21 +818,48 @@ class _homestate extends State<home> {
                               width: 50,
                               padding: const EdgeInsets.all(7),
                               decoration: const BoxDecoration(
-                                  color: Color.fromARGB(255, 137, 102, 236),
+                                  // color: Color.fromARGB(255, 137, 102, 236),
                                   borderRadius:
                                       BorderRadius.all(Radius.circular(15))),
                               child: Image.asset(
-                                "img/tobank.png",
+                                "img/lenskart.webp",
                                 height: 30,
                                 width: 30,
-                                color: Colors.white,
+                                // color: Colors.white,
                               ),
                             ),
                             const Text(
-                              "To Bank /",
+                              "Lenskart /",
                               style: TextStyle(color: Colors.white),
                             ),
-                            const Text("UPI ID",
+                            // const Text("",
+                            //     style: TextStyle(color: Colors.white)),
+                          ],
+                        ),
+                        Column(
+                          children: [
+                            Container(
+                              margin: const EdgeInsets.all(8),
+                              height: 50,
+                              width: 50,
+                              padding: const EdgeInsets.all(7),
+                              decoration: const BoxDecoration(
+                                  // color: Color.fromARGB(255, 137, 102, 236),
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(15))),
+                              child: Image.asset(
+                                "img/phonepay.png",
+                                height: 30,
+                                width: 30,
+
+                                // color: Colors.white,
+                              ),
+                            ),
+                            const Text(
+                              "phonePe",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                            const Text(" ",
                                 style: TextStyle(color: Colors.white)),
                           ],
                         ),
@@ -842,44 +871,18 @@ class _homestate extends State<home> {
                               width: 50,
                               padding: const EdgeInsets.all(7),
                               decoration: const BoxDecoration(
-                                  color: Color.fromARGB(255, 137, 102, 236),
+                                  //color: Color.fromARGB(255, 137, 102, 236),
                                   borderRadius:
                                       BorderRadius.all(Radius.circular(15))),
                               child: Image.asset(
-                                "img/toself.png",
+                                "img/swiggy.png",
                                 height: 30,
                                 width: 30,
-                                color: Colors.white,
+                                // color: Colors.white,
                               ),
                             ),
                             const Text(
-                              "To Self",
-                              style: TextStyle(color: Colors.white),
-                            ),
-                            const Text("Account",
-                                style: TextStyle(color: Colors.white)),
-                          ],
-                        ),
-                        Column(
-                          children: [
-                            Container(
-                              margin: const EdgeInsets.all(8),
-                              height: 50,
-                              width: 50,
-                              padding: const EdgeInsets.all(7),
-                              decoration: const BoxDecoration(
-                                  color: Color.fromARGB(255, 137, 102, 236),
-                                  borderRadius:
-                                      BorderRadius.all(Radius.circular(15))),
-                              child: Image.asset(
-                                "img/bank.png",
-                                height: 30,
-                                width: 30,
-                                color: Colors.white,
-                              ),
-                            ),
-                            const Text(
-                              "Check",
+                              "Swiggy",
                               style: TextStyle(color: Colors.white),
                             ),
                             const Text("Balance",
@@ -893,6 +896,262 @@ class _homestate extends State<home> {
               ),
 
 // end of sponser link
+// start of insurance
+              Container(
+                padding: const EdgeInsets.all(15),
+                margin: const EdgeInsets.only(
+                  right: 3,
+                  left: 3,
+                  top: 8,
+                  bottom: 8,
+                ),
+                decoration: const BoxDecoration(
+                  color: Color.fromARGB(255, 86, 45, 150),
+                  borderRadius: BorderRadius.all(Radius.circular(15)),
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          "Insurance",
+                          style: TextStyle(fontSize: 18, color: Colors.white),
+                        ),
+                        // Container(
+                        //   width: 80,
+                        //   height: 30,
+                        //   padding: const EdgeInsets.only(top: 5, left: 13),
+                        //   decoration: BoxDecoration(
+                        //     borderRadius: BorderRadius.circular(12),
+                        //     color: const Color.fromARGB(255, 116, 94, 206),
+                        //   ),
+                        //   child: const Text(
+                        //     "My Bills",
+                        //     style: TextStyle(color: Colors.grey),
+                        //   ),
+                        // ),
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Column(
+                          children: [
+                            Container(
+                              margin: const EdgeInsets.all(8),
+                              height: 50,
+                              width: 50,
+                              padding: const EdgeInsets.all(7),
+                              decoration: const BoxDecoration(
+                                  //  color: Color.fromARGB(255, 137, 102, 236),
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(15))),
+                              child: Image.asset(
+                                "img/bike.png",
+                                height: 30,
+                                width: 30,
+                                color: Colors.white,
+                              ),
+                            ),
+                            const Text(
+                              "Bike",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                            // const Text("Recharge",
+                            //     style: TextStyle(color: Colors.white)),
+                          ],
+                        ),
+                        Column(
+                          children: [
+                            Container(
+                              margin: const EdgeInsets.all(8),
+                              height: 50,
+                              width: 50,
+                              padding: const EdgeInsets.all(1),
+                              decoration: const BoxDecoration(
+                                  // color: Color.fromARGB(255, 137, 102, 236),
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(15))),
+                              child: Image.asset(
+                                "img/car.png",
+                                height: 50,
+                                width: 50,
+                                color: Colors.white,
+                              ),
+                            ),
+                            const Text(
+                              "Car",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                          ],
+                        ),
+                        Column(
+                          children: [
+                            Container(
+                              margin: const EdgeInsets.all(8),
+                              height: 50,
+                              width: 50,
+                              padding: const EdgeInsets.all(7),
+                              decoration: const BoxDecoration(
+                                  // color: Color.fromARGB(255, 137, 102, 236),
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(15))),
+                              child: Image.asset(
+                                "img/helth.png",
+                                height: 30,
+                                width: 30,
+                                color: Colors.white,
+                              ),
+                            ),
+                            const Text(
+                              "Health",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                          ],
+                        ),
+                        Column(
+                          children: [
+                            Container(
+                              margin: const EdgeInsets.all(8),
+                              height: 50,
+                              width: 50,
+                              padding: const EdgeInsets.all(7),
+                              decoration: const BoxDecoration(
+                                  // color: Color.fromARGB(255, 137, 102, 236),
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(15))),
+                              child: Image.asset(
+                                "img/accident.png",
+                                height: 30,
+                                width: 30,
+                                color: Colors.white,
+                              ),
+                            ),
+                            const Text(
+                              "Accident",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                            // const Text("Bill Payment",
+                            //     style: TextStyle(color: Colors.white)),
+                          ],
+                        ),
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Column(
+                          children: [
+                            Container(
+                              margin: const EdgeInsets.all(8),
+                              height: 50,
+                              width: 50,
+                              padding: const EdgeInsets.all(7),
+                              decoration: const BoxDecoration(
+                                  //  color: Color.fromARGB(255, 137, 102, 236),
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(15))),
+                              child: Image.asset(
+                                "img/term.png",
+                                height: 30,
+                                width: 30,
+                                color: Colors.white,
+                              ),
+                            ),
+                            const Text(
+                              "Term",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                            const Text("Life",
+                                style: TextStyle(color: Colors.white)),
+                          ],
+                        ),
+                        Column(
+                          children: [
+                            Container(
+                              margin: const EdgeInsets.all(8),
+                              height: 50,
+                              width: 50,
+                              padding: const EdgeInsets.all(1),
+                              decoration: const BoxDecoration(
+                                  // color: Color.fromARGB(255, 137, 102, 236),
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(15))),
+                              child: Image.asset(
+                                "img/travel.png",
+                                height: 50,
+                                width: 50,
+                                color: Colors.white,
+                              ),
+                            ),
+                            const Text(
+                              "Travel",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                            const Text("Insurance",
+                                style: TextStyle(color: Colors.white)),
+                          ],
+                        ),
+                        Column(
+                          children: [
+                            Container(
+                              margin: const EdgeInsets.all(8),
+                              height: 50,
+                              width: 50,
+                              padding: const EdgeInsets.all(7),
+                              decoration: const BoxDecoration(
+                                  // color: Color.fromARGB(255, 137, 102, 236),
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(15))),
+                              child: Image.asset(
+                                "img/renewable.png",
+                                height: 30,
+                                width: 30,
+                                color: Colors.white,
+                              ),
+                            ),
+                            const Text(
+                              "Insurance",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                            const Text(
+                              "Renewal",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                          ],
+                        ),
+                        Column(
+                          children: [
+                            Container(
+                              margin: const EdgeInsets.all(8),
+                              height: 50,
+                              width: 50,
+                              padding: const EdgeInsets.all(7),
+                              decoration: const BoxDecoration(
+                                  color: Color.fromARGB(255, 137, 102, 236),
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(15))),
+                              child: Image.asset(
+                                "img/more.png",
+                                height: 30,
+                                width: 30,
+                                color: Colors.white,
+                              ),
+                            ),
+                            const Text(
+                              "See All",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+// end insurance
             ],
           ),
         ),
