@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:phonepay/topappbar.dart';
+
 // import 'appbar.dart';
 
 void main() {
@@ -44,7 +46,8 @@ class _homestate extends State<home> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return MaterialApp(
+        home: Scaffold(
       appBar: AppBar(
         leading: const CircleAvatar(
           backgroundImage: AssetImage("img/profile.jpg"),
@@ -191,8 +194,8 @@ class _homestate extends State<home> {
                   ],
                 ),
               ),
-
-              // transfer money option
+// end of advatazment
+              // transfer money option start
 
               Container(
                 padding: EdgeInsets.all(15),
@@ -363,7 +366,7 @@ class _homestate extends State<home> {
               ),
 // end of recive money
 
-// phone pay wallet
+// phone pay wallet start
               Container(
                 margin: const EdgeInsets.only(left: 1, top: 2),
                 padding: const EdgeInsets.all(6),
@@ -451,8 +454,445 @@ class _homestate extends State<home> {
               ),
 
 // end of wallet
-//upi lte
-             
+//startupi lte
+              Container(
+                margin: const EdgeInsets.only(
+                  right: 3,
+                  left: 3,
+                  top: 6,
+                ),
+                padding: const EdgeInsets.all(15),
+                decoration: const BoxDecoration(
+                  color: Color.fromARGB(255, 86, 45, 150),
+                  borderRadius: BorderRadius.all(Radius.circular(15)),
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    const Text(
+                      "UPI > lte",
+                      style: TextStyle(color: Colors.white, fontSize: 16),
+                    ),
+                    const Text(
+                      "PIN-less Payment",
+                      style: TextStyle(color: Colors.white, fontSize: 15),
+                    ),
+                    Container(
+                      height: 37,
+                      width: 120,
+                      // margin: const EdgeInsets.only(left: 1, top: 2),
+                      // padding: const EdgeInsets.all(2),
+                      decoration: const BoxDecoration(
+                        color: Color.fromARGB(255, 55, 90, 245),
+                        borderRadius: BorderRadius.all(Radius.circular(15)),
+                      ),
+                      child: TextButton(
+                        onPressed: () {},
+                        child: const Text(
+                          "TRY NOW",
+                          style: TextStyle(color: Colors.white, fontSize: 16),
+                        ),
+                      ),
+                    )
+                  ],
+                ),
+              ),
+//
+//
+
+//Recharhe and pay bill starting
+//
+//
+              Container(
+                padding: EdgeInsets.all(15),
+                margin: const EdgeInsets.only(
+                  right: 3,
+                  left: 3,
+                  top: 8,
+                ),
+                decoration: const BoxDecoration(
+                  color: Color.fromARGB(255, 86, 45, 150),
+                  borderRadius: BorderRadius.all(Radius.circular(15)),
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          "Recharge & Pay Bills",
+                          style: TextStyle(fontSize: 18, color: Colors.white),
+                        ),
+                        Container(
+                          width: 80,
+                          height: 30,
+                          padding: EdgeInsets.only(top: 5, left: 13),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(12),
+                            color: Color.fromARGB(255, 116, 94, 206),
+                          ),
+                          child: const Text(
+                            "My Bills",
+                            style: TextStyle(color: Colors.grey),
+                          ),
+                        ),
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Column(
+                          children: [
+                            Container(
+                              margin: const EdgeInsets.all(8),
+                              height: 50,
+                              width: 50,
+                              padding: const EdgeInsets.all(7),
+                              decoration: const BoxDecoration(
+                                  //  color: Color.fromARGB(255, 137, 102, 236),
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(15))),
+                              child: Image.asset(
+                                "img/recharge.png",
+                                height: 30,
+                                width: 30,
+                                color: Colors.white,
+                              ),
+                            ),
+                            const Text(
+                              "Mobail",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                            const Text("Recharge",
+                                style: TextStyle(color: Colors.white)),
+                          ],
+                        ),
+                        Column(
+                          children: [
+                            Container(
+                              margin: const EdgeInsets.all(8),
+                              height: 50,
+                              width: 50,
+                              padding: const EdgeInsets.all(1),
+                              decoration: const BoxDecoration(
+                                  // color: Color.fromARGB(255, 137, 102, 236),
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(15))),
+                              child: Image.asset(
+                                "img/dth.png",
+                                height: 50,
+                                width: 50,
+                                color: Colors.white,
+                              ),
+                            ),
+                            const Text(
+                              "DTH",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                          ],
+                        ),
+                        Column(
+                          children: [
+                            Container(
+                              margin: const EdgeInsets.all(8),
+                              height: 50,
+                              width: 50,
+                              padding: const EdgeInsets.all(7),
+                              decoration: const BoxDecoration(
+                                  // color: Color.fromARGB(255, 137, 102, 236),
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(15))),
+                              child: Image.asset(
+                                "img/electricity.png",
+                                height: 30,
+                                width: 30,
+                                color: Colors.white,
+                              ),
+                            ),
+                            const Text(
+                              "Electricity",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                          ],
+                        ),
+                        Column(
+                          children: [
+                            Container(
+                              margin: const EdgeInsets.all(8),
+                              height: 50,
+                              width: 50,
+                              padding: const EdgeInsets.all(7),
+                              decoration: const BoxDecoration(
+                                  // color: Color.fromARGB(255, 137, 102, 236),
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(15))),
+                              child: Image.asset(
+                                "img/creditcard.png",
+                                height: 30,
+                                width: 30,
+                                color: Colors.white,
+                              ),
+                            ),
+                            const Text(
+                              "Credit Card",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                            const Text("Bill Payment",
+                                style: TextStyle(color: Colors.white)),
+                          ],
+                        ),
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Column(
+                          children: [
+                            Container(
+                              margin: const EdgeInsets.all(8),
+                              height: 50,
+                              width: 50,
+                              padding: const EdgeInsets.all(7),
+                              decoration: const BoxDecoration(
+                                  //  color: Color.fromARGB(255, 137, 102, 236),
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(15))),
+                              child: Image.asset(
+                                "img/rent.png",
+                                height: 30,
+                                width: 30,
+                                color: Colors.white,
+                              ),
+                            ),
+                            const Text(
+                              "Rent ",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                            const Text("Payment",
+                                style: TextStyle(color: Colors.white)),
+                          ],
+                        ),
+                        Column(
+                          children: [
+                            Container(
+                              margin: const EdgeInsets.all(8),
+                              height: 50,
+                              width: 50,
+                              padding: const EdgeInsets.all(1),
+                              decoration: const BoxDecoration(
+                                  // color: Color.fromARGB(255, 137, 102, 236),
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(15))),
+                              child: Image.asset(
+                                "img/loan.png",
+                                height: 50,
+                                width: 50,
+                                color: Colors.white,
+                              ),
+                            ),
+                            const Text(
+                              "Loan",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                            const Text("Repayment",
+                                style: TextStyle(color: Colors.white)),
+                          ],
+                        ),
+                        Column(
+                          children: [
+                            Container(
+                              margin: const EdgeInsets.all(8),
+                              height: 50,
+                              width: 50,
+                              padding: const EdgeInsets.all(7),
+                              decoration: const BoxDecoration(
+                                  // color: Color.fromARGB(255, 137, 102, 236),
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(15))),
+                              child: Image.asset(
+                                "img/cylinder.png",
+                                height: 30,
+                                width: 30,
+                                color: Colors.white,
+                              ),
+                            ),
+                            const Text(
+                              "Book A",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                            const Text(
+                              "Cylinder",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                          ],
+                        ),
+                        Column(
+                          children: [
+                            Container(
+                              margin: const EdgeInsets.all(8),
+                              height: 50,
+                              width: 50,
+                              padding: const EdgeInsets.all(7),
+                              decoration: const BoxDecoration(
+                                  color: Color.fromARGB(255, 137, 102, 236),
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(15))),
+                              child: Image.asset(
+                                "img/more.png",
+                                height: 30,
+                                width: 30,
+                                color: Colors.white,
+                              ),
+                            ),
+                            const Text(
+                              "See All",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+
+//end
+//
+//
+//start sponscired Links
+              Container(
+                padding: EdgeInsets.all(15),
+                margin: const EdgeInsets.only(
+                  right: 3,
+                  left: 3,
+                  top: 9,
+                ),
+                decoration: const BoxDecoration(
+                  color: Color.fromARGB(255, 86, 45, 150),
+                  borderRadius: BorderRadius.all(Radius.circular(15)),
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Text(
+                      "Sponscored Links",
+                      style: TextStyle(fontSize: 18, color: Colors.white),
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Column(
+                          children: [
+                            Container(
+                              margin: const EdgeInsets.all(8),
+                              height: 50,
+                              width: 50,
+                              padding: const EdgeInsets.all(7),
+                              decoration: const BoxDecoration(
+                                  color: Color.fromARGB(255, 137, 102, 236),
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(15))),
+                              child: Image.asset(
+                                "img/user.png",
+                                height: 30,
+                                width: 30,
+                                color: Colors.white,
+                              ),
+                            ),
+                            const Text(
+                              "To Mobail",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                            const Text("Number",
+                                style: TextStyle(color: Colors.white)),
+                          ],
+                        ),
+                        Column(
+                          children: [
+                            Container(
+                              margin: const EdgeInsets.all(8),
+                              height: 50,
+                              width: 50,
+                              padding: const EdgeInsets.all(7),
+                              decoration: const BoxDecoration(
+                                  color: Color.fromARGB(255, 137, 102, 236),
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(15))),
+                              child: Image.asset(
+                                "img/tobank.png",
+                                height: 30,
+                                width: 30,
+                                color: Colors.white,
+                              ),
+                            ),
+                            const Text(
+                              "To Bank /",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                            const Text("UPI ID",
+                                style: TextStyle(color: Colors.white)),
+                          ],
+                        ),
+                        Column(
+                          children: [
+                            Container(
+                              margin: const EdgeInsets.all(8),
+                              height: 50,
+                              width: 50,
+                              padding: const EdgeInsets.all(7),
+                              decoration: const BoxDecoration(
+                                  color: Color.fromARGB(255, 137, 102, 236),
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(15))),
+                              child: Image.asset(
+                                "img/toself.png",
+                                height: 30,
+                                width: 30,
+                                color: Colors.white,
+                              ),
+                            ),
+                            const Text(
+                              "To Self",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                            const Text("Account",
+                                style: TextStyle(color: Colors.white)),
+                          ],
+                        ),
+                        Column(
+                          children: [
+                            Container(
+                              margin: const EdgeInsets.all(8),
+                              height: 50,
+                              width: 50,
+                              padding: const EdgeInsets.all(7),
+                              decoration: const BoxDecoration(
+                                  color: Color.fromARGB(255, 137, 102, 236),
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(15))),
+                              child: Image.asset(
+                                "img/bank.png",
+                                height: 30,
+                                width: 30,
+                                color: Colors.white,
+                              ),
+                            ),
+                            const Text(
+                              "Check",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                            const Text("Balance",
+                                style: TextStyle(color: Colors.white)),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+
+// end of sponser link
             ],
           ),
         ),
@@ -481,6 +921,6 @@ class _homestate extends State<home> {
         unselectedItemColor: const Color.fromARGB(255, 136, 136, 136),
         onTap: _onItemTapped,
       ),
-    );
+    ));
   }
 }
